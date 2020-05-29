@@ -21,10 +21,12 @@ screenshot_information = "screenshot.png"
 keys_information = "key_log.txt"
 
 
-time_iteration = 30
+time_iteration = 30 #enter time in seconds
 
 # Email Controls
-email_address = "prachi.1js17cs070@gmail.com"
+email_address = ""
+with open("email.txt","r") as f:
+	email_address= f.read().replace('\n','')
 password = ""
 with open("password.txt","r") as f:
 	password = f.read().replace('\n','')

